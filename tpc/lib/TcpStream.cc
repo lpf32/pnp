@@ -39,7 +39,7 @@ int TcpStream::receiveSome(void *buf, int len)
     return sock_.read(buf, len);
 }
 
-int TcpStream::sendAll(const char *buf, int len)
+int TcpStream::sendAll(const void *buf, int len)
 {
     int written = 0;
     while (written < len)

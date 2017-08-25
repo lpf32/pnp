@@ -27,7 +27,7 @@ public:
     int receiveAll(void *buf, int len);
     int receiveSome(void *buf, int len);
 
-    int sendAll(const char *buf, int len);
+    int sendAll(const void *buf, int len);
     int sendSome(const void *buf, int len);
 
     // thread safe
