@@ -68,7 +68,7 @@ bool InetAddress::resolveSlow(const char *hostname, InetAddress *out)
 
     while (buf.size() <= 16 * kResolveBufSize) // 64 KiB
     {
-        int ret = gethostbyname_r(hostname, &hent, buf.data(), buf.size(), &he, &herrno)
+        int ret = gethostbyname_r(hostname, &hent, buf.data(), buf.size(), &he, &herrno);
         if (ret == 0 && he != NULL)
         {
             assert(he->h_addrtype == AF_INET &&  he->h_length == sizeof(uint32_t));
