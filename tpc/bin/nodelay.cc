@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
     {
         int ack = 0;
         int nr = stream->receiveAll(&ack, sizeof ack);
-        printf("%.6f received %d bytes, ack = %d", now(), nr, ack);
+        printf("%.6f received %d bytes, ack = %d\n", now(), nr, ack);
     }
 
     printf("total %f seconds\n", now() - start);

@@ -15,6 +15,7 @@ public:
     explicit InetAddress(uint16_t port, bool loopbackOnly = false);
 
     explicit InetAddress(const struct sockaddr_in& saddr)
+        : saddr_(saddr)
     { }
 
     std::string toIp() const;

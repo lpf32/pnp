@@ -112,7 +112,7 @@ InetAddress Socket::getPerrAddr() const
     struct sockaddr_in peeraddr;
     bzero(&peeraddr, sizeof peeraddr);
     socklen_t addrlen = static_cast<socklen_t>(sizeof peeraddr);
-    if (::getsockname(sockfd_, sockaddr_cast(&peeraddr), &addrlen) < 0)
+    if (::getpeername(sockfd_, sockaddr_cast(&peeraddr), &addrlen) < 0)
     {
         perror("Socket::getLocalAddr");
     }
