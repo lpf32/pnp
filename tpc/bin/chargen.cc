@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 
     std::thread(measure).detach();
 
-    int port = atoi(argv[0]);
+    int port = atoi(argv[2]);
     if (strcmp(argv[1], "-l") == 0)
     {
         Acceptor acceptor((InetAddress(port)));
