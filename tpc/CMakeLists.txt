@@ -15,6 +15,7 @@ add_executable(nodelay bin/nodelay.cc ${LIBSOURCES})
 add_executable(nodelay_server bin/nodelay_server.cc ${LIBSOURCES})
 
 add_executable(netcat bin/netcat.cc ${LIBSOURCES})
+target_link_libraries(netcat pthread)
 
 add_executable(chargen bin/chargen.cc ${LIBSOURCES})
 target_link_libraries(chargen pthread)
