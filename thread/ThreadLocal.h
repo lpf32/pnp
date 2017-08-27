@@ -1,0 +1,6 @@
+
+
+#ifndef PNP_THREADLOCAL_H
+#define PNP_THREADLOCAL_H
+
+#endif //PNP_THREADLOCAL_H

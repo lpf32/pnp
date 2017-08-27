@@ -1,0 +1,4 @@
+#ifndef PNP_COPYABLE_H
+#define PNP_COPYABLE_H
+
+#endif //PNP_COPYABLE_H
